@@ -24,7 +24,6 @@ public class MenuScene {
     private MenuButtons menuButtons;
     private MenuButtons removeButton;
 
-
     public MenuScene(Stage primaryStage, String username) {
         this.primaryStage = primaryStage;
         this.username = username;
@@ -34,7 +33,6 @@ public class MenuScene {
         this.removeButton = new MenuButtons(this);
 
     }
-
 
     public void show() {
 
@@ -61,29 +59,29 @@ public class MenuScene {
         Items.Item item9 = Products.item9;
 
         // Create buttons using MenuButtons logic
-        menuButtons.createButtons(menuLayout, new Items.Item[]{item1, item2, item3, item4, item5, item6, item7, item8, item9}, orderList, orderListView, receipt, primaryStage);
+        menuButtons.createButtons(menuLayout,
+                new Items.Item[] { item1, item2, item3, item4, item5, item6, item7, item8, item9 }, orderList,
+                orderListView, receipt, primaryStage);
 
         // Add the order list to the layout
         menuLayout.getChildren().add(createOrderListView());
 
         // Add the Finish button to the layout
-        menuLayout.getChildren().add(MenuButtons.createFinishButton(menuLayout, orderList, orderListView, receipt, primaryStage));
+        menuLayout.getChildren()
+                .add(MenuButtons.createFinishButton(menuLayout, orderList, orderListView, receipt, primaryStage));
 
         totalSpendingLabel.layoutXProperty().bind(menuLayout.widthProperty().multiply(0.025));
         totalSpendingLabel.layoutYProperty().bind(menuLayout.heightProperty().multiply(0.9));
         menuLayout.getChildren().add(totalSpendingLabel);
-        
-
 
         // Create the remove Button
         menuLayout.getChildren().add(removeButton.createRemoveButton(menuLayout, orderListView, orderList));
 
-
         Scene menuScene = new Scene(menuLayout, 600, 500);
         menuScene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
+        primaryStage.setTitle("Menu");
         primaryStage.setScene(menuScene);
     }
-
 
     private ListView<String> createOrderListView() {
         orderListView.prefWidthProperty().bind(menuLayout.widthProperty().multiply(0.25));
@@ -106,4 +104,13 @@ public class MenuScene {
     public void updateTotalSpendingLabel() {
         totalSpendingLabel.setText("Total: $" + receipt.calculateTotal(orderList));
     }
+
+    public void resetOrderList() {
+        // Clear the order list
+        orderList.clear();
+
+        // Show the menu scene again
+        show();
+    }
+
 }

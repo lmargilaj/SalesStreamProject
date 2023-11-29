@@ -3,9 +3,13 @@ package scenes.logic;
 
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
+import scenes.MenuScene;
+import scenes.ReceiptScene;
 
 public class ReceiptButtons {
-  public Button createPayWithCardButton(Pane layout) {
+  public ReceiptButtons(MenuScene menuScene, ReceiptScene receiptScene) {
+    }
+public Button createPayWithCardButton(Pane layout) {
     Button payWithCard = new Button("CARD");
     //payWithCard.setOnAction(e -> checkPayment(orderListView, orderList));
     payWithCard.prefWidthProperty().bind(layout.widthProperty().multiply(0.2));
