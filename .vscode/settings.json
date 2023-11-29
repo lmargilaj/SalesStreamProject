@@ -3,13 +3,13 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "c:\\Users\\alexm\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.base.jar",
-        "c:\\Users\\alexm\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.controls.jar",
-        "c:\\Users\\alexm\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.fxml.jar",
-        "c:\\Users\\alexm\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.graphics.jar",
-        "c:\\Users\\alexm\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.media.jar",
-        "c:\\Users\\alexm\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.swing.jar",
-        "c:\\Users\\alexm\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.web.jar",
-        "c:\\Users\\alexm\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx-swt.jar"
+        "c:\\Users\\liria\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.base.jar",
+        "c:\\Users\\liria\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.controls.jar",
+        "c:\\Users\\liria\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.fxml.jar",
+        "c:\\Users\\liria\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.graphics.jar",
+        "c:\\Users\\liria\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.media.jar",
+        "c:\\Users\\liria\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.swing.jar",
+        "c:\\Users\\liria\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx.web.jar",
+        "c:\\Users\\liria\\OneDrive\\Desktop\\javafx-sdk-21.0.1\\lib\\javafx-swt.jar"
     ]
 }

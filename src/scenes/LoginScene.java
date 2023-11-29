@@ -5,6 +5,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 import scenes.logic.MenuButtons;
 import javafx.scene.layout.Pane;
@@ -79,7 +80,6 @@ public class LoginScene {
 
         welcomeText.getStyleClass().add("login-text");
         welcomeText.setStyle("login-text");
-
         loginText.getStyleClass().add("login-text");
         loginText.setStyle("login-text");
         
